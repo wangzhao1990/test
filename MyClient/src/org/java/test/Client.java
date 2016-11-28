@@ -12,7 +12,7 @@ public class Client {
 		Socket s = new Socket("127.0.0.1", 6789);
 		OutputStream os = s.getOutputStream();
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(os));
-		bw.write("我不爱你了！");
+		bw.write("我一点都不爱你了！");
 		bw.close();
 		os.close();
 		s.close();
